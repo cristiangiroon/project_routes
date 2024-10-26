@@ -10,8 +10,9 @@ const router = createRouter({
       component: Home,
     },
     {
-      path: '/about',
+      path: '/about/:id',
       name: 'about',
+      props: true,
       component: () => import('@/components/About.vue'), // Aquí se usa la carga diferida
     },
   ],
